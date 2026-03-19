@@ -26,3 +26,11 @@ This repository contains the C++ firmware for an ESP32-based high-speed line-fol
 3. Perform the "Calibration Dance": slide the front sensor array across the black line and the white floor.
 4. Center the robot perfectly on the line.
 5. Uncover the LDR to launch!
+
+## 🔌 Electrical Schematic & Wiring Diagram
+
+The diagram below shows the core interconnections between the ESP32 microcontroller, the L298N motor driver, the high-voltage motor battery (VBAT), and the analog sensor array. To maintain schematic clarity and improve readability, this design utilizes professional engineering Net Labels instead of drawing long, overlapping wires.
+
+🚨 **Critical Safety Note:** All systems must share a single, common ground (GND) to ensure proper PWM signal propagation and logical operation.
+
+![Robot Electrical Schematic](openrobotica_schematic.png)
